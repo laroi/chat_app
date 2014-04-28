@@ -1,0 +1,275 @@
+2014/04/05 05:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "test".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\projects\android_im\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/android_im/index.php/test
+---
+2014/04/27 16:04:16 [error] [php] Undefined variable: deviceid (C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php:12)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/signupuser
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (12)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:04:41 [error] [php] Undefined variable: last_insert_id (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/signupuser
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (43)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (12)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:05:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userfk' in 'field list'. The SQL statement executed was: INSERT INTO user_details (userfk,device_id) VALUES ('1','123456789').
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (51)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (12)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:05:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userfk' in 'field list'. The SQL statement executed was: INSERT INTO user_details (userfk,device_id) VALUES ('1','123456789')' in C:\xampp\htdocs\Yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php(51): CDbCommand->execute()
+#1 C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php(12): usermodel->createUser('test', '123456789', '132456')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionSignUpUser()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): CController->run('signupuser')
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/signupuser')
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\projects\android_im\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/projects/android_im/index.php/api/signupuser
+---
+2014/04/27 16:14:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "syncContact".' in C:\xampp\htdocs\Yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(271): CController->missingAction('syncContact')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): CController->run('syncContact')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/syncContact')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\android_im\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+---
+2014/04/27 16:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "syncContact".' in C:\xampp\htdocs\Yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(271): CController->missingAction('syncContact')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): CController->run('syncContact')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/syncContact')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\android_im\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+---
+2014/04/27 16:15:23 [error] [php] explode() expects at least 2 parameters, 1 given (C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (22)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:23:03 [error] [php] Undefined variable: myNumber (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:33)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsyncContact()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (33)
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (61)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (26)
+2014/04/27 16:25:49 [error] [php] Undefined variable: contact (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsyncContact()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (31)
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (60)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (26)
+2014/04/27 16:39:39 [error] [php] Undefined variable: device_id (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsyncContact()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (30)
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (72)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (26)
+2014/04/27 16:40:09 [error] [php] Undefined variable: device_id (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsyncContact()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (30)
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (72)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (26)
+2014/04/27 16:40:52 [error] [php] Undefined variable: device_id (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsyncContact()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/syncContact
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (31)
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (72)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (26)
+2014/04/27 16:48:08 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:71)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (71)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (34)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:49:17 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:71)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (71)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (34)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:49:44 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT user_pk, device_id FROM user AS u JOIN user_details AS ud ON u.user_pk = ud.user_fk  where u.contact_number =.
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (28)
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (80)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (34)
+2014/04/27 16:49:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT user_pk, device_id FROM user AS u JOIN user_details AS ud ON u.user_pk = ud.user_fk  where u.contact_number =' in C:\xampp\htdocs\Yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php(28): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php(80): usermodel->getDeviceId('123456789')
+#3 C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php(34): usermodel->sendMessage('123456789', 'testing')
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsendMessage()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): CController->run('sendmessage')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/sendmessage')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\projects\android_im\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+---
+2014/04/27 16:50:39 [error] [php] Undefined variable: myNumber (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (81)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (34)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:51:05 [error] [php] Undefined variable: myNumber (C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#4 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (81)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (34)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:51:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'to, from, msg, to_device_id) VALUES (123456789,, testing,123456789)' at line 1. The SQL statement executed was: INSERT INTO messages (to, from, msg, to_device_id) VALUES (123456789,, testing,123456789).
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (83)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (34)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:51:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'to, from, msg, to_device_id) VALUES (123456789,, testing,123456789)' at line 1. The SQL statement executed was: INSERT INTO messages (to, from, msg, to_device_id) VALUES (123456789,, testing,123456789)' in C:\xampp\htdocs\Yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php(83): CDbCommand->execute()
+#1 C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php(34): usermodel->sendMessage('123456789', 'testing')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsendMessage()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): CController->run('sendmessage')
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/sendmessage')
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\projects\android_im\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+---
+2014/04/27 16:52:38 [error] [php] Undefined index: from (C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(287): APIController->runAction()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(266): APIController->runActionWithFilters()
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): APIController->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\projects\android_im\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (32)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:53:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'to, from, msg, to_device_id) VALUES (123456789,4587, testing,123456789)' at line 1. The SQL statement executed was: INSERT INTO messages (to, from, msg, to_device_id) VALUES (123456789,4587, testing,123456789).
+in C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php (83)
+in C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php (35)
+in C:\xampp\htdocs\projects\android_im\index.php (13)
+2014/04/27 16:53:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'to, from, msg, to_device_id) VALUES (123456789,4587, testing,123456789)' at line 1. The SQL statement executed was: INSERT INTO messages (to, from, msg, to_device_id) VALUES (123456789,4587, testing,123456789)' in C:\xampp\htdocs\Yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\projects\android_im\protected\models\usermodel.php(83): CDbCommand->execute()
+#1 C:\xampp\htdocs\projects\android_im\protected\controllers\apicontroller.php(35): usermodel->sendMessage('123456789', '4587', 'testing')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(50): APIController->actionsendMessage()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(283): CController->run('sendmessage')
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/sendmessage')
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\projects\android_im\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/projects/android_im/index.php/api/sendmessage
+---
